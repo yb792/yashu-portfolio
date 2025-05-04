@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashu Baghel | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Yashu Baghel</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hi, I'm Yashu Baghel</h2>
+    <p>Software Developer | Java | MERN Stack Enthusiast</p>
+    <a href="yashu_baghel.pdf" download class="btn"><i class="fas fa-download"></i> Download Resume</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an engineering graduate who wants to work in a professional environment
+      where I can utilize my knowledge and apply skills to fulfill the organizational
+      goals and get a full-time position.
+    </p>
+    <ul>
+      <li>B.Tech in ECE - LNCTS Bhopal (8.38 CGPA)</li>
+      <li>12th - 70%, APS Seoni</li>
+      <li>10th - 8.8 CGPA, APS Seoni</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>MakeMyTrip Clone</h3>
+      <p>A full-stack travel booking web app built using MERN stack with secure admin panel.</p>
+      <a href="https://github.com/yb792/make-my-trip-clone.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+    <div class="project">
+      <h3>User Registration Form</h3>
+      <p>Desktop Java Swing GUI to store user info with MySQL backend.</p>
+      <a href="https://github.com/yb792/Project.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Full-Stack Web Development</li>
+      <li>Java Desktop Applications</li>
+      <li>Database Design & Integration</li>
+      <li>Frontend Design with HTML, CSS, JS, Bootstrap</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Hire Me</h2>
+    <p><i class="fas fa-phone"></i> +91 9770332475</p>
+    <p><i class="fas fa-envelope"></i> yashubaghel2019@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Seoni, Madhya Pradesh</p>
+    <p>
+      <a href="https://www.linkedin.com/in/yashu-baghel-467629202" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yashu Baghel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 200;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          sec.classList.add('show');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
