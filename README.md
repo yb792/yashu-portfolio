@@ -34,7 +34,7 @@ I’m currently looking for full-time opportunities in the software domain.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, CSS
 - **Deployment**: Netlify
 
 ---
@@ -44,7 +44,6 @@ I’m currently looking for full-time opportunities in the software domain.
 yashu-portfolio/
 ├── index.html
 ├── style.css
-├── script.js
 └── assets/
 └── images, icons, etc.
 📬 Contact Me
